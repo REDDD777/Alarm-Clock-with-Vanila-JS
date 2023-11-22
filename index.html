@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Alarm Clock</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,300&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <h1>Alarm Clock</h1>
+
+    <div class="container">
+
+        <div id="clock"></div>
+
+        <input type="datetime-local" name="alarmType" id="alarmTime" required/>
+
+        <div class="controls">
+            <button class="button set-alarm" onclick="setAlarm()"> Set Alarm</button>
+            <button class="button clear-alarm" onclick="clearAlarm()"> Stop Alarm</button>
+        </div>
+
+        
+    </div>
+    <div id="alarms">
+        <h2>Upcoming Alarms</h2>
+        
+        <div id="alarmList">
+
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
